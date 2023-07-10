@@ -1,0 +1,1411 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+section{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    position: sticky;
+    top: 0px;
+    transition: .5s;
+}
+header img{
+    width: 75px;
+    height: 76px;
+    position: relative;
+    top: 3px;
+    left: 117%;
+}
+
+header ul{
+    display: flex;
+    position: absolute;
+    right: 8.5%;
+    top: 30%;
+    transition: 1s;
+}
+header li{
+    list-style-type: none;
+    margin-right: 25px;
+    font-size: 16.3px;
+    text-transform: capitalize;
+    transition: 0.8s;
+    transition: 1s;
+}
+header li:hover a{
+    color: rgba(7, 126, 196, 0.9);
+    transition: 0.2s;
+}
+header a{
+    text-decoration: none;
+    color: rgba(73, 73, 73, 0.7);
+    transition: 1s;
+}
+header.sroll{
+    padding-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+header.sroll img{
+    top: -17px;
+}
+header.sroll ul{
+    top: 20%;
+}
+main{
+    position: relative;
+}
+main .slider{
+    overflow: hidden;
+    height: 600px;
+}
+main .slider .image{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+main .slider .visible{
+    opacity: 1;
+    transition: 1s;
+}
+main .slider .image img{
+    position: relative;
+    left: -5%;
+    width: 101%;
+    height: 700px;
+    transition: 1s;
+}
+main .slider .visible img{
+    left: 0%;
+    width: 100%;
+    height: 600px;
+    transition: 1s;
+}
+main .slider .image a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+main .slider .image .text-slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-47%,-47%);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 300px 10px 300px 10px;
+    text-align: center;
+    
+}
+main .slider .image .text-slide h2{
+    position: relative;
+    width: 1150px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: normal;
+}
+main .slider .image .text-slide p{
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    position: relative;
+    left: 30%;
+}
+main .slider .image .text-slide button{
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+    position: absolute;
+    right: 40%;
+    font-weight: bold;
+    background: transparent;
+    text-transform: capitalize;
+    border-radius: 50px;
+    border: 3px solid rgba(7, 126, 196, 0.9);
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 40px;
+    cursor: pointer;
+}
+main .slider .image .text-slide button:hover{
+    background-color:  rgba(7, 126, 196, 0.9);
+    transition: .8s;
+}
+main .slider .chevron{
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
+    position: absolute;
+    top: 5%;
+    transform: translateY(50%);
+    cursor: pointer;
+    transition: .8s;
+}
+main .slider .chevron:hover{
+    opacity: 0.8;
+    transition: .8s;
+}
+main .slider  .gauche{
+    left: 0%;
+}
+main .slider .droit{
+    right: 0%;
+}
+main .entete-bloc{
+    text-align: center;
+    padding-top: 30px;
+}
+main .entete-bloc .ligne{
+    display: inline-block;
+    width: 150px;
+    border-bottom: 1px solid rgba(7, 126, 196, 0.9);
+    position: relative;
+    bottom: 10px;
+}
+main .entete-bloc .point{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(0, 162, 255);
+    position: relative;
+    top: 16px;
+}
+main .entete-bloc h1{
+    text-transform: uppercase;
+    padding-top: 50px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+main .entete-bloc p{
+    padding: 20px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+main #about{
+    padding: 0px 80px 0px 80px;
+    background: url(../image/bg.jpg);
+    color: rgba(255, 255, 255, 0.9);
+    height: 350px;
+}
+main #about .contenu{
+    font-size: 25px;
+    text-align: center;
+}
+main #about h1{
+    color: white;
+}
+
+main #service .contenu{
+    padding-left: 50px;
+    position: relative;
+}
+
+main #service .service{
+    padding: 15px;
+    float: left;
+    color: rgba(14, 13, 13, 0.7);
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+main #service .service img{
+    float: left;
+    width: 95px;
+    height: 95px;
+    padding-bottom: 20px;
+}
+main #service .service h3{
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+main #service .service p{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+main #service .service a{
+    text-decoration: none;
+    color: rgba(0, 162, 255, 0.8);
+    text-align: center;
+}
+main #hosting-plan{
+    background-color: rgba(17, 252, 228, 0.178);
+    display: inline-block;
+    width: 100%;
+}
+
+main #hosting-plan .contenu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0px 100px 100px;
+}
+main #hosting-plan .contenu .plan{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 350px;
+    height: 550px;
+    border-radius: 6px;
+    margin-right: 30px;
+    
+}
+main #hosting-plan .contenu .plan:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+main #hosting-plan .contenu .plan .entete-plan{
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px 6px 0px 0px;
+}
+main #hosting-plan .contenu .plan .corps-plan{
+    padding: 30px;
+}
+main #hosting-plan .contenu .plan .entete-plan h2{
+    background-color: rgba(128, 124, 124, 0.5);
+    font-size: 20px;
+    padding: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+main #hosting-plan .contenu .plan .entete-plan p{
+    text-align: center;
+    font-weight: bold;
+}
+main #hosting-plan .contenu .plan .entete-plan .plan-p1{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+}
+main #hosting-plan .contenu .plan .entete-plan .plan-p2{
+    font-size: 15px;
+}
+main #hosting-plan .contenu .plan .corps-plan ul{
+    padding-bottom: 15px;
+}
+main #hosting-plan .contenu .plan .corps-plan li{
+    list-style-type: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 15px;
+}
+
+main #hosting-plan .contenu .plan .corps-plan button{
+    padding: 15px 25px 15px 25px;
+    background-color: rgba(0, 162, 255, 0.8);
+    font-size: 17px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    text-transform: capitalize;
+}
+main #hosting-plan .contenu .plan .corps-plan button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+main #hosting-plan .contenu .plan .best{
+    background-color: rgba(5, 101, 156, 0.9);
+
+}
+main #hosting-plan .contenu .plan .best h2{
+    background-color: rgba(92, 91, 91, 0.9);
+}
+main #hosting-plan .contenu img{
+    width: 150px;
+    position: absolute;
+    left: 47%;
+    transform: translate(2%, -100%);
+}
+
+main #contact .contenu{
+    display: flex;
+    overflow: hidden;
+    padding: 10px 0px 100px 100px;
+}
+main #contact .contenu span{
+    text-decoration: none;
+    margin-right: 80px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+main #contact .contenu span p{
+    padding-top: 10px;
+    color: rgba(73, 73, 73, 0.9);
+}
+main #contact .contenu span img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+main #contact .contenu span img:hover{
+    box-shadow: 3px 3px 7px rgba(0, 162, 255, 0.8), -3px -3px 5px rgba(0, 162, 255, 0.8);
+}
+main #contact .contenu span p{
+    text-align: center;
+}
+main #blogs{
+    background-color: rgba(219, 219, 219, 0.3);
+}
+main #blogs .contenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+main #blogs .contenu  .article{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    left: 7%;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    margin-right: 30px;
+}
+main #blogs .contenu .article img{
+    width: 100%;
+}
+main #blogs .contenu .article h5{
+    color: rgba(82, 192, 255, 0.9);
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 12px;
+}
+main #blogs .contenu .article a{
+    text-decoration: none;
+    color: rgba(10, 10, 10, 0.5);
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 10px;
+}
+main #blogs .contenu .article p{
+    color: rgba(70, 69, 69, 0.5);
+    padding: 20px;
+    font-size: 15px;
+}
+main #blogs .contenu .article button{
+    padding: 13px 30px 13px 30px;
+    background-color: rgba(0, 162, 255, 0.8);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    
+}
+
+#popup{
+    width: 360px;
+    height: 400px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: fixed;
+    left: 70.5%;
+    bottom: 14%;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+#popup .close{
+    position: relative;
+    bottom: 20px;
+    left: 93%;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.4);
+    transition: 1s;
+    cursor: pointer;
+}
+#popup .close:hover{
+    color: rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+#popup .titre-popup{
+    display: flex;
+    align-items: center;
+    background-color: rgba(204, 199, 199, 0.1);
+    padding: 10px;
+}
+#popup .time{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 12%;
+    left: 50%;
+}
+#popup .titre-popup .logo-popup img{
+    width: 60px;
+    height: 60px;
+}
+#popup .titre-popup .logo-popup span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgb(3, 202, 53);
+    position: relative;
+    bottom: 9px;
+    right: 12px;
+}
+#popup .titre-popup .titre{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#popup .titre-popup .titre h5{
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+#popup .titre-popup .titre span{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+#popup .message-popup .hi-popup{
+    display: flex;
+    align-items: center;
+    padding: 40px 10px 20px 20px;
+}
+#popup .message-popup .hi-popup img{
+    width: 35px;
+    height: 35px;
+}
+#popup .message-popup .hi-popup p{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 0px 6px 6px 6px;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+#popup .message-popup .button-popup{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#popup .message-popup .button-popup h5{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 20px 20px 20px 20px;
+}
+#popup .message-popup .button-popup .btn1{
+    color: rgb(255, 255, 255);
+    background-color: rgba(3, 202, 53, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 6px;
+    width: 300px;
+    padding: 13px;
+    position: relative;
+    left: 8%;
+    cursor: pointer;
+}
+
+#popup .message-popup .button-popup .btn2{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    width: 200px;
+    position: relative;
+    left: 23%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+ #bouton{
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 93%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#bouton span{
+    display: inline-block;
+    width: 10px;
+    height: 9.5px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    left: 83%;
+    bottom: 20%;
+}
+#bouton img{
+    opacity: 0.85;
+    position: relative;
+    top: 30%;
+    left: 6.5%;
+    width: 35px;
+    height: 30px;
+}
+
+#popup.popup-change{
+    opacity: 1;
+    bottom: 16%;
+    transition: .5s;
+}
+
+@media screen and (max-width: 1024px ) and (min-width: 769px ) {
+   
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    header{
+        padding: 5px;
+        overflow: hidden;
+    }
+    header .sroll img{
+        top: 0px;
+    }
+    header ul{
+        right: 5%;
+        top: 20%;
+    }
+    header li{
+        margin-right: 15px;
+    }
+    main .slider .image .text-slide h2{
+        font-size: 35px;
+        right: 30%;
+        width: 165%;
+    }
+    main .slider .image .text-slide p{
+        left: 0%;
+    }
+    main .slider .image .text-slide button{
+        right: 25%;
+    }
+    main .slider .chevron{
+        width: 60px;
+        height: 60px;
+        transform: none;
+        top: 6%;
+    }
+    main #about{
+        padding: 0px;
+    }
+    main #about .contenu{
+        font-size: 24px;
+    }
+    main #service .contenu{
+        padding-left: 7%;
+        padding-right: 0px;
+        padding-bottom: 150px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 5%;
+        
+    }
+    main #service .service{
+        width: 100%;
+    }
+    main #hosting-plan .contenu{
+        overflow: hidden;
+        padding: 50px 0px 200px 30px;
+        margin: 0px;
+    }
+    main #hosting-plan .contenu .plan{
+        height: 100%;
+
+    }
+    main #hosting-plan .contenu .plan .corps-plan{
+        margin: 0px;
+        padding: 10px;
+    }
+    main #hosting-plan .contenu img{
+        left: 42%;
+        transform: translate(2%, -115%)
+    }
+    main #hosting-plan .contenu .plan .corps-plan li{
+        padding-top: 5px;
+    }
+    main #contact .contenu{
+        display: grid;
+        padding: 30px 20px 200px 100px;
+        grid-template-columns: 40% 40%;
+        gap: 8%;
+        text-align: center;
+    }
+    #popup{
+        left: 55%;
+        bottom: 9%;
+    }
+    #popup.popup-change{
+        bottom: 15%;
+    }
+    #bouton{
+        left: 85%;
+    }
+    main #blogs .contenu{
+        overflow: auto;
+        padding: 0px;
+    }
+    main #blogs .contenu .article{
+        left: 2%;
+        
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 541px){
+    
+    header{
+        padding: 5px;
+        overflow: hidden;
+    }
+    header .menu{
+        display: none;
+    }
+    header img{
+        left: 30%;
+        top: -5px;
+    }
+    header.sroll img{
+        top: 0px;
+    }
+    header ul{
+        top: 25%;
+        right: 5%;
+    }
+    header li{
+        font-size: 15px;
+        margin-right: 13px;
+    }
+    
+    main .contenu{
+        position: relative;
+        padding: 0px 10px 20px 10px;
+    }
+    main .slider{
+        position: relative;
+        width: 100%;
+        
+    }
+    main .slider .image{
+        display: inline-block;
+        width: 100%;
+    }
+    main .slider .image img{
+        width: 100%;
+    }
+    main .slider .image .text-slide h2{
+        position: relative;
+        font-size: 35px;
+        right: 25%;
+        width: 155%;
+    }
+    main .slider .image .text-slide p{
+        left: 0%;
+    }
+    main .slider .image .text-slide button{
+        right: 20%;
+    }
+    main .slider .chevron{
+        width: 60px;
+        height: 60px;
+        transform: none;
+        top: 35%;
+    }
+    main #about{
+        padding: 0px;
+    }
+    main #about .contenu{
+        font-size: 24px;
+    }
+    main #service .contenu{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+        padding-top: 50px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 5%;
+        
+    }
+    main #service .service{
+        width: 100%;
+    }
+    main #hosting-plan .contenu{
+        padding: 50px 20px 200px 50px;
+        margin: 0px;
+    }
+    main #hosting-plan .contenu .plan{
+        margin-right: 20px;
+        height: 100%;
+
+    }
+    main #hosting-plan .contenu .plan .corps-plan{
+        margin: 0px;
+        padding: 15px;
+    }
+    main #hosting-plan .contenu img{
+        width: 20%;
+        left: 40%;
+        transform: translate(2%, -115%)
+    }
+    main #contact .contenu{
+        display: grid;
+        padding: 30px 20px 200px 100px;
+        grid-template-columns: 40% 40%;
+        gap: 8%;
+        text-align: center;
+    }
+    main #blogs .contenu{
+        overflow: auto;
+        padding: 0px;
+    }
+    main #blogs .contenu .article{
+        left: 2%;
+        
+    }
+    #popup{
+        left: 40%;
+        bottom: 9%;
+    }
+    #popup.popup-change{
+        bottom: 10%;
+    }
+    #bouton{
+        left: 75%;
+    }
+}
+@media screen and (max-width: 541px) {
+    header{
+        z-index: 100;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+    header .sroll{
+        padding: 0px;
+    }
+    header.sroll img{
+        top: 0px;
+    }
+    header img{
+        left: 1%;
+        top: 1px;
+    }
+    header .menu{
+        display: inline-block;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        left: 60%;
+    }
+    header #logo-honowa{
+        width: 100%;
+        padding: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    header .menu span{
+        display: block;
+        margin: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    header nav{
+        position: relative;
+        height: 0px;
+    }
+    header nav.changeMenu{
+        height: 100%;
+        left: 8%;
+    }
+    header ul{
+        position: relative;
+        display: inline-block;
+        transform: none;
+        width: 100%;
+    }
+    header li{
+        position: absolute;
+        opacity: 0;
+        z-index: 0;
+        top: -50px;
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    header nav.changeMenu li{
+        position: sticky;
+        z-index: 100;
+        top: 0px;
+        opacity: 1;
+    }
+    header nav.changeMenu ul{
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+@media screen and (max-width: 540px) and (min-width: 481px){
+    
+    header .menu{
+        left: 70%;
+    }
+    header li:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    header li:hover a{
+        color: rgba(73, 73, 73, 0.7);
+    }
+    main .slider .image .text-slide h2{
+        width: 180%;
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        right: 45%;
+    }
+    main .slider .image .text-slide p{
+        width: 120%;
+        left: -20%;
+        text-align: center;
+    }
+    main .slider .image .text-slide button{
+        margin-top: 20px;
+        right: 20%;
+        font-size: 15px;
+    }
+    main #about{
+        padding: 0px 15px 10px 15px;
+    }
+    main #about .contenu{
+        line-height: 30px;
+        font-size: 24px;
+    }
+    main #service .contenu{
+        padding: 5%;
+        display: inline-block;
+    }
+    main #service .service{
+        width: 100%;
+    }
+    
+    main #hosting-plan{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    main #hosting-plan .contenu{
+        display: block;
+        padding: 2%;
+    }
+    main #hosting-plan .contenu .plan{
+        width: 96%;
+        position: relative;
+        left: 2%;
+        padding-bottom: 6%;
+        margin-bottom: 6%;
+
+    }
+    main #hosting-plan .contenu .plan .entete-plan{
+        padding: 20px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p1{
+        font-size: 40px;
+        display: inline-block;
+        padding: 0px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p2{
+        font-size: 18px;
+    }
+    main #hosting-plan .contenu img{
+        left: 39%;
+    }
+    main #contact .contenu{
+        padding: 0px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main #blogs{
+        overflow: auto;
+    }
+    main #blogs .contenu{
+        width: 150%;
+        overflow: auto;
+    }
+    main #blogs .contenu .article{
+
+        margin-right: 2%;
+        padding: 0px;
+        
+    }
+    #popup{
+        left: 48%;
+        z-index: 110;
+    }
+    #bouton{
+        left: 85%;
+        z-index: 115;
+    }
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+header{
+    padding: 7px;
+}
+header img{
+    top: 0px;
+}
+
+header .menu{
+    left: 63%;
+}
+main .slider .image .text-slide h2{
+width: 200%;
+font-size: 20px;
+text-align: center;
+position: relative;
+bottom: 50px;
+right: 50%;
+}
+main .slider .image .text-slide p{
+    width: 160%;
+    font-size: 15px;
+    padding: 5px;
+    bottom: 50px;
+    left: -40%;
+    text-align: center;
+}
+main .slider .image .text-slide button{
+    padding: 10px 30px 10px 30px;
+    margin-top: 20px;
+    right: 10%;
+    font-size: 15px;
+}
+main .slider .chevron{
+    width: 50px;
+    height: 50px;
+    top: 3.5%;
+}
+main #about{
+    padding: 0px 15px 50px 15px;
+}
+main #about .contenu{
+    line-height: 30px;
+    font-size: 24px;
+}
+main #service .contenu{
+    padding: 5%;
+    display: inline-block;
+}
+main #service .service{
+    width: 90%;
+}
+
+main #hosting-plan{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main #hosting-plan .contenu{
+    display: block;
+    padding: 2%;
+    padding-bottom: 50px;
+}
+main #hosting-plan .contenu .plan{
+    width: 96%;
+    position: relative;
+    left: 2%;
+    padding-bottom: 6%;
+    margin-bottom: 8%;
+
+}
+main #hosting-plan .contenu .plan .entete-plan{
+    padding: 20px;
+}
+main #hosting-plan .contenu .plan .entete-plan .plan-p1{
+    font-size: 40px;
+    display: inline-block;
+    padding: 0px;
+}
+main #hosting-plan .contenu .plan .entete-plan .plan-p2{
+    font-size: 18px;
+}
+main #hosting-plan .contenu img{
+    left: 30%;
+}
+main #contact .contenu{
+    padding: 0px;
+    padding-bottom: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main #contact .contenu span{
+    padding-top: 8%;
+    left: 8%;
+}
+main #blogs{
+    overflow: auto;
+}
+main #blogs .contenu{
+    width: 150%;
+    overflow: auto;
+}
+main #blogs .contenu .article{
+    
+    margin-right: 2%;
+    padding: 0px;
+    
+}
+main #blogs .contenu .article h5{
+    font-size: 10px;
+}
+main #blogs .contenu .article a{
+    font-size: 15px;
+}
+main #blogs .contenu .article p{
+    padding: 10px;
+}
+#popup{
+    width: 250px;
+    height: 300px;
+    left: 30%;
+    bottom: 10%;
+    z-index: 110;
+}
+#popup.popup-change{
+    bottom: 12%;
+}
+#popup .titre-popup{
+    padding: 0px;
+}
+#popup .time{
+    top: 8%;
+    left: 55%;
+}
+#popup .titre-popup .logo-popup img{
+    width: 50px;
+    height: 50px;
+}
+#popup .titre-popup .logo-popup span{
+    width: 6px;
+    height: 6px;
+    bottom: 22px;
+    left: 60%;
+}
+#popup .titre-popup .titre h5{
+    font-size: 13px;
+}
+#popup .titre-popup .titre span{
+    font-size: 10px;
+}
+#popup .message-popup .hi-popup{
+    padding: 20px 5px 10px 10px;
+}
+#popup .message-popup .button-popup h5{
+    padding: 10px;
+    font-size: 15px;
+}
+#popup .message-popup .button-popup .btn1{
+    width: 90%;
+    font-size: 15px;
+    padding: 10px;
+}
+#popup .message-popup .button-popup .btn2{
+    width: 85%;
+    margin-top: 10px;
+    left: 10%;
+}
+#bouton{
+    width: 50px;
+    height: 50px;
+    left: 83%;
+    z-index: 115;
+}
+#bouton span{
+    bottom: 30%;
+    left: 80%;
+}
+#bouton img{
+    width: 30px;
+    height: 25px;
+    top: 25%;
+    left: -8%;
+}
+}
+
+
+
+
+@media screen and (max-width: 319px) and (min-width: 280px) {
+    header{
+        padding: 7px;
+    }
+    header img{
+        top: 0px;
+    }
+    
+    header .menu{
+        left: 53%;
+    }
+    main .slider .image .text-slide h2{
+    width: 200%;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    right: 50%;
+    }
+    main .slider .image .text-slide p{
+        width: 160%;
+        font-size: 15px;
+        padding: 5px;
+        bottom: 50px;
+        left: -40%;
+        text-align: center;
+    }
+    main .slider .image .text-slide button{
+        padding: 10px 20px 10px 20px;
+        margin-top: 20px;
+        right: 10%;
+        font-size: 15px;
+    }
+    main .slider .chevron{
+        width: 40px;
+        height: 40px;
+        top: 3.5%;
+    }
+    main .entete-bloc p{
+        font-size: 13px;
+    }
+    main #about{
+        padding: 0px 15px 50px 15px;
+    }
+    main #about .contenu{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    main #service .contenu{
+        padding: 5%;
+        display: inline-block;
+    }
+    main #service .service{
+        width: 85%;
+    }
+    main #service .service img{
+        width: 85px;
+        height: 85px;
+    }
+    main #service .service h3{
+        font-size: 17px;
+    }
+    main #service .service p{
+        font-size: 14px;
+    }
+    main #hosting-plan{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    main #hosting-plan .contenu{
+        display: block;
+        padding: 2%;
+        padding-bottom: 50px;
+    }
+    main #hosting-plan .contenu .plan{
+        width: 96%;
+        position: relative;
+        left: 2%;
+        padding-bottom: 6%;
+        margin-bottom: 10%;
+    
+    }
+    main #hosting-plan .contenu .plan .entete-plan{
+        padding: 20px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan h2{
+        font-size: 17px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p1{
+        font-size: 30px;
+        display: inline-block;
+        padding: 0px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p2{
+        font-size: 15px;
+    }
+    main #hosting-plan .contenu .plan .corps-plan li{
+        font-size: 15px;
+    }
+    main #hosting-plan .contenu img{
+        left: 25%;
+    }
+    main #contact .contenu{
+        padding: 0px;
+        padding-bottom: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main #contact .contenu span{
+        text-align: center;
+        padding-top: 8%;
+        left: 10%;
+    }
+    main #contact .contenu span img{
+        width: 100px;
+        height: 100px;
+    }
+    main #blogs{
+        overflow: auto;
+    }
+    main #blogs .contenu{
+        width: 150%;
+        overflow: auto;
+    }
+    main #blogs .contenu .article{
+        
+        margin-right: 2%;
+        padding: 0px;
+        
+    }
+    main #blogs .contenu .article h5{
+        font-size: 10px;
+    }
+    main #blogs .contenu .article a{
+        font-size: 15px;
+    }
+    main #blogs .contenu .article p{
+        padding: 10px;
+    }
+    #popup{
+        width: 250px;
+        height: 300px;
+        left: 5%;
+        bottom: 10%;
+        z-index: 110;
+    }
+    #popup.popup-change{
+        bottom: 12%;
+    }
+    #popup .titre-popup{
+        padding: 0px;
+    }
+    #popup .time{
+        top: 8%;
+        left: 55%;
+    }
+    #popup .titre-popup .logo-popup img{
+        width: 50px;
+        height: 50px;
+    }
+    #popup .titre-popup .logo-popup span{
+        width: 6px;
+        height: 6px;
+        bottom: 8px;
+        right: 20%;
+    }
+    #popup .titre-popup .titre h5{
+        font-size: 13px;
+    }
+    #popup .titre-popup .titre span{
+        font-size: 10px;
+    }
+    #popup .message-popup .hi-popup{
+        padding: 20px 5px 10px 10px;
+    }
+    #popup .message-popup .button-popup h5{
+        padding: 20px;
+        font-size: 15px;
+    }
+    #popup .message-popup .button-popup .btn1{
+        width: 90%;
+        font-size: 15px;
+        padding: 10px;
+    }
+    #popup .message-popup .button-popup .btn2{
+        width: 85%;
+        margin-top: 10px;
+        left: 10%;
+    }
+    #bouton{
+        width: 50px;
+        height: 50px;
+        left: 70%;
+        z-index: 115;
+    }
+    #bouton span{
+        bottom: 30%;
+        left: 80%;
+    }
+    #bouton img{
+        width: 30px;
+        height: 25px;
+        top: 25%;
+        left: -8%;
+    }
+}
+
+

@@ -1,0 +1,310 @@
+
+
+@media screen and (max-width : 1280px) {
+    header{
+        overflow: hidden;
+    }
+    header ul{
+        transform: translate(50%, -14px);
+    }
+    header li{
+        font-size: 14px;
+    }
+    main .slider .image .caption{
+        display: inline-block;
+        justify-content: center;
+    }
+    main .slider .image .caption h2{
+        width: 100%;
+    }
+    main #service .contenu-ligne1{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        padding: 0px;
+    }
+    main #service .service{
+        width: 100%;
+    }
+    main #service .contenu-ligne2{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        padding: 0px;
+    }
+    main #hosting-plan .contenu{
+        display: flex;
+        justify-content: center;
+        padding: 10px 10px 30px 0px;
+    }
+    main #hosting-plan .contenu .plan{
+        width: 250px;
+        height: 450px;
+        margin-right: 20px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan{
+        padding: 10px;
+    }
+    main #hosting-plan .contenu .plan .corps-plan{
+        padding: 15px;
+    }
+    main #hosting-plan .contenu .plan .corps-plan li{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    main #hosting-plan .contenu .plan .corps-plan button{
+        padding: 10px;
+    }
+    main #hosting-plan .contenu img{
+        left: 42%;
+    }
+    main #contact .contenu{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 100px;
+        justify-content: center;
+    }
+    main #blogs .contenu{
+        display: flex;
+        justify-content: center;
+    }
+
+    main #blogs .contenu .article{
+        display: inline-block;
+        width: 250%;
+        padding: 20px;
+        left: 5%;
+    }
+    #popup{
+        position: fixed;
+        left: 70%;
+        bottom: 14%;
+        width: 300px;
+        height: 350px;
+    }
+    #popup .titre-popup{
+        padding: 5px;
+    }
+    #popup .titre-popup .logo-popup img{
+        width: 50px;
+        height: 50px;
+    }
+    #popup .titre-popup .logo-popup span{
+        width: 7px;
+        height: 7px;
+    }
+    #popup .titre-popup .titre h5{
+        font-size: 14px;
+    }
+    #popup .titre-popup .titre span{
+        font-size: 11px;
+    }
+    #popup .message-popup .hi-popup img{
+        width: 30px;
+        height: 30px;
+    }
+    #popup .message-popup .hi-popup p{
+        padding: 8px;
+        font-size: 13px;
+    }
+    #popup .message-popup .button-popup h5{
+        font-size: 14px;
+        padding: 15px 15px 15px 15px;
+    }
+    #popup .message-popup .button-popup .btn1{
+        width: 80%;
+        padding: 10px;
+    }
+    #popup .message-popup .button-popup .btn2{
+        width: 70%;
+        left: 14%;
+        margin-top: 15px;
+    }
+    #bouton{
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+
+}
+@media screen and (max-width: 720px) {
+    header{
+        z-index: 100;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+    header img{
+        left: 1%;
+        top: 1px;
+    }
+    header .menu{
+        display: inline-block;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        left: 78%;
+    }
+    header #logo-honowa{
+        width: 100%;
+        padding: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    header .menu span{
+        display: block;
+        margin: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    header nav{
+        position: relative;
+        height: 0px;
+    }
+    header ul{
+        display: inline-block;
+        transform: none;
+        width: 100%;
+    }
+    header li{
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    header nav.changeMenu{
+        height: 100%;
+        left: 0%;
+    }
+    header li:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    header li:hover a{
+        color: rgba(73, 73, 73, 0.7);
+    }
+    main .slider .image .text-slide h2{
+        width: 150%;
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        right: 30%;
+    }
+    main .slider .image .text-slide p{
+        width: 100%;
+        left: 0%;
+        text-align: center;
+    }
+    main .slider .image .text-slide button{
+        margin-top: 20px;
+        right: 30%;
+        font-size: 15px;
+    }
+    main #about{
+        padding: 0px 20px 0px 20px;
+    }
+    main #about .contenu{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    main #service .service{
+        width: 80%;
+    }
+    main #service .contenu-ligne1{
+        display: block;
+    }
+    main #service .contenu-ligne2{
+        display: block;
+    }
+    main #hosting-plan{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    main #hosting-plan .contenu{
+        display: block;
+        padding: 0px;
+    }
+    main #hosting-plan .contenu .plan{
+        width: 96%;
+        position: relative;
+        left: 2%;
+        margin-bottom: 6%;
+
+    }
+    main #hosting-plan .contenu .plan .entete-plan{
+        padding: 20px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p1{
+        font-size: 40px;
+        display: inline-block;
+        padding: 0px;
+    }
+    main #hosting-plan .contenu .plan .entete-plan .plan-p2{
+        font-size: 18px;
+    }
+    main #hosting-plan .contenu img{
+        left: 39%;
+    }
+    main #contact .contenu{
+        padding: 0px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main #blogs{
+        overflow: hidden;
+    }
+    main #blogs .contenu{
+        width: 130%;
+        overflow: visible;
+    }
+    main #blogs .contenu .article{
+        margin: 0px;
+        padding: 5px;
+        
+    }
+    #popup{
+        left: 48%;
+        z-index: 110;
+    }
+    #bouton{
+        left: 85%;
+        z-index: 115;
+    }
+}
+@media screen and (max-width: 920px) {
+    header{
+        position: sticky;
+        top: 0px;
+        padding: 10px;
+        border: 5px solid rgba(0, 10, 20, 0.9);
+        
+    }
+    header.sroll{
+
+    }
+    header img{
+        left: 25%;
+        bottom: 7px;
+        width: 70px;
+        height: 71px;
+    }
+    header ul{
+        right: 28%;
+        top: 45%;
+    }
+    header li{
+        margin-right: 15px;
+        font-weight: bold;
+        opacity: 0.8;
+    }
